@@ -1,0 +1,295 @@
+.s{
+    margin-left: 1400px;
+    margin-top: 40px;
+    height: 5px;
+    width: 120px; border: solid rgba(143, 85, 38, 0.48) ; background-color: rgba(143, 85, 38, 0.485);
+    animation-name: ss ;
+    opacity: 1;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    border-radius: 10px;
+} 
+.j{
+        width: 20px;
+        height: 50px;
+        margin-top: -40px;
+        margin-left: -10px;
+        border-radius: 50%;
+        background: linear-gradient( to top , rgb(216, 195, 9) , rgb(211, 214, 38) , #ebe45f);
+        /* background-color: yellow; */
+        box-shadow: 0 0 25px rgba(251, 178, 49, 0.95) , 
+                    0 0 26px rgba(250, 220, 50, 0.811),
+                    0 0 26px rgba(250, 220, 50, 0.611),
+                    0 -10px 27px rgba(250, 220, 50, 0.96) ,
+                    0 -15px 28px rgba(250, 220, 50, 0.811),
+                    0 -20px 29px rgba(250, 220, 50, 0.611),
+
+                    0 0 45px rgba(214,109,4,0.95),
+                    0 0 46px rgba(214,109,4,0.911),
+                    0 0 47px rgba(214,109,4,0.611),
+                    0 -10px 60px rgba(214,109,4,0.95),
+                    0 -15px 64px rgba(214,109,4,0.911),
+                    0 -30px 65px rgba(214,109,4,0.811);
+
+        animation-name: sss ;
+        animation: af  2s linear 0.2s infinite;
+}
+
+
+.black {
+    width: 4px;
+    height: 0.01px;
+    position: relative;
+    left: -7px;
+    top: -11px;
+    border: 6px solid rgba(41, 41, 41, 0.911);
+    background: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0,0.925), 0 0 20px rgba(0, 0, 0,0.856), 0 -10px 21px rgba(0, 0, 0,0.884), 0 -30px 21px rgba(0, 0, 0,0.39), 0 -30px 21px rgba(0, 0, 0,0.9);
+}
+@keyframes af {
+    0%{
+        transform: rotate(1deg);
+    }
+    24%{
+        transform: rotate(6deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-6deg);
+    }
+    100%{
+        transform: rotate(-1deg);
+    }
+    
+}
+@keyframes ss {
+    
+    70% {
+        margin-left: 380px;
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.02;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes sss {
+    
+    to {
+        margin-left: 110%;
+    }
+}
+/* 
+.box{
+    width: 60px;
+    height: 40px;
+    background-color: aquamarine;
+    border: 10px solid black;
+    z-index: 1;
+    position: relative;
+} */
+.box {
+    width: 24px;
+    height: 90px;
+    margin-top: -315px;
+    margin-left: 395px;
+    border-radius: 50%;
+    background-color: rgb(44, 41, 41);
+    
+    z-index: 1;
+    position: relative;
+    animation-name: jal;
+    animation-duration: 1s;
+    animation-delay: 2.8s;
+    animation-fill-mode: forwards;
+     animation-timing-function: ease-out;
+
+   
+}
+@keyframes jal {
+    30%{
+        background: linear-gradient( to top , rgb(216, 195, 9) , rgb(211, 214, 38) , #ebe45f);
+    }
+    100%{
+           
+           background: linear-gradient( to top , rgb(216, 195, 9) , rgb(211, 214, 38) , #ebe45f);
+           /* background-color: yellow; */
+           box-shadow: 0 0 25px rgba(251, 178, 49, 0.95) , 
+                       0 0 26px rgba(250, 220, 50, 0.811),
+                       0 0 26px rgba(250, 220, 50, 0.611),
+                       0 -10px 27px rgba(250, 220, 50, 0.96) ,
+                       0 -15px 28px rgba(250, 220, 50, 0.811),
+                       0 -20px 29px rgba(250, 220, 50, 0.611),
+   
+                       0 0 45px rgba(214,109,4,0.95),
+                       0 0 46px rgba(214,109,4,0.911),
+                       0 0 47px rgba(214,109,4,0.611),
+                       0 -10px 60px rgba(214,109,4,0.95),
+                       0 -15px 64px rgba(214,109,4,0.911),
+                       0 -30px 65px rgba(214,109,4,0.811);
+
+                       animation: af  2s linear 0.2s infinite;
+   
+    }
+    
+}
+
+.bod{
+    background-color: rgb(44, 41, 41);
+    animation-name: change;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+}
+@keyframes change {
+    to{
+        background: linear-gradient(to top , rgb(207, 190, 38) , rgb(211, 214, 38) ,rgba(214,109,4,0.95));
+    }
+    
+}
+
+@keyframes dis {
+    0%{ 
+        opacity: 0;
+    }
+    100%{
+       
+        opacity: 1;
+    }
+}
+
+.firework {
+    position: relative;
+    opacity: 0;
+    animation: show_fireworks 2s
+     ease-in-out 4.3s forwards;
+    padding-top: 10%;
+    z-index:-1;
+}
+
+@keyframes show_fireworks {
+    0% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.cracker {
+    position: absolute;
+    width: 4px;
+    height: 80px;
+    transform-origin: 50% 100%;
+    overflow: hidden;
+}
+
+.cracker::before {
+    content: '';
+    background: linear-gradient(rgb(175, 17, 17) , rgb(90, 7, 129) , rgb(189, 192, 14) );
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    animation: fire 2s
+     ease-in-out infinite;
+}
+
+@keyframes fire {
+    0% {
+        top: 100%;
+    }
+    25% {
+        top: 50%;
+    }
+    50% {
+        top: -25%;
+    }
+    75% {
+        top: -50%;
+    }
+    100% {
+        top: -50%;
+    }
+}
+
+.cracker:nth-child(1) {
+    transform: rotate(0deg)
+     translateY(-15px);
+}
+.cracker:nth-child(2) {
+    transform: rotate(30deg)
+     translateY(-15px);
+}
+.cracker:nth-child(3) {
+    transform: rotate(60deg)
+     translateY(-15px);
+}
+.cracker:nth-child(4) {
+    transform: rotate(90deg)
+     translateY(-15px);
+}
+.cracker:nth-child(5) {
+    transform: rotate(120deg)
+     translateY(-15px);
+}
+.cracker:nth-child(6) {
+    transform: rotate(150deg)
+     translateY(-15px);
+}
+.cracker:nth-child(7) {
+    transform: rotate(180deg)
+     translateY(-15px);
+}
+.cracker:nth-child(8) {
+    transform: rotate(210deg)
+     translateY(-15px);
+}
+.cracker:nth-child(9) {
+    transform: rotate(240deg)
+     translateY(-15px);
+}
+.cracker:nth-child(10) {
+    transform: rotate(270deg)
+     translateY(-15px);
+}
+.cracker:nth-child(11) {
+    transform: rotate(300deg)
+     translateY(-15px);
+}
+.cracker:nth-child(12) {
+    transform: rotate(330deg)
+     translateY(-15px);
+}
+
+#firework1 {
+    left:200px;
+    top: -750px;
+    transform: scale(1);
+}
+
+#firework2 {
+        left: 560px;
+        top: -850px;
+        transform: scale(0.7);
+
+}
+#firework3 {
+    left: 1400px;
+    top: -1050px;
+    transform: scale(1);
+}
+#firework4 {
+    left:30px;
+    top: -1100px;
+    transform: scale(0.6);
+}
